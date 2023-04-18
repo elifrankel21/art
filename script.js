@@ -37,5 +37,5 @@ window.onclick = function(event) {
 }
 
 // rotate images
-var element = document.getElementById("gallery-2");
-element.classList.add("a.rotate-1");
+// var element = document.getElementById("gallery-2");
+// element.classList.add("a.rotate-1");
