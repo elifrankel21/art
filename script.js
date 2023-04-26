@@ -30,7 +30,7 @@ function myFunction() {
 
 window.onclick = function(event) {
   // console.log(event.target)
-  if (event.target == document.getElementById("modal")) {
+  if (event.target == document.getElementById("img-1")) {
     modal.style.display = "none";
     $(".modal").removeClass("block")
   }
@@ -49,6 +49,10 @@ function adjustText() {
   text.style.top = "50%";
   text.style.left = "50%";
   text.style.transform = "translate(-50%, -50%)";
+}
+function FullSize(){
+  var image = document.getElementById("img-1");
+  image.style.scale = "200%"
 }
 
 function hideOnScroll() {

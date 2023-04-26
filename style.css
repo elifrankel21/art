@@ -48,11 +48,15 @@
 p {
   color: white;
 }
-
-body{
-  background-color: lightblue;
-  margin: 0;
+/*body{
+  background: url("https://images.pexels.com/photos/927017/pexels-photo-927017.jpeg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+*/
+
 :root {
 	font-size: 10px;
 }
@@ -62,7 +66,9 @@ body{
 *::after {
 	box-sizing: border-box;
 }
-
+body{
+  background-color: black;
+}
 
 
 .container {
@@ -91,11 +97,13 @@ body{
 }
 
 .gallery-item {
-	flex: 1 0 24rem;
+	width: 100%;
+  height: 100%;
 	margin: 1rem;
 	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 	overflow: hidden;
 }
+
 .gallery-2{
   transform: rotate(90deg);
 }
@@ -107,33 +115,6 @@ body{
 	transition: transform 400ms ease-out;
 }
 
-.expand {
-  display: absolute;
-  width: 125%;
-  height: 125%;
-}
-
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.4);
-}
-
-
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
 
 .appear {
   display: block !important;
@@ -155,7 +136,6 @@ a.rotate-1{
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(20, 20, 20);
 }
 .gallery-title {
   text-align: center;
@@ -181,7 +161,6 @@ body {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  opacity: 0.5;
   transition: all 500ms;
 }
 .gallery-item:hover img {
@@ -198,7 +177,10 @@ body {
 
 
 
-
+.img-1:onclick {
+  width: 70px;
+  height: 74px;
+}
 
 
 
